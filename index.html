@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18944409-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-18944409-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a web designer in Kissimmee, FL.">
+    <meta name="author" content="Josh G. Johnson">
+    <meta name="theme" content="#333333">
+<!--
+  removed until assets have been updated
+		<link rel="icon" type="image/png" href="//dl.dropboxusercontent.com/u/25306892/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="//dl.dropboxusercontent.com/u/25306892/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="//dl.dropboxusercontent.com/u/25306892/icons/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/x-icon" href="https://dl.dropboxusercontent.com/u/25306892/icons/favicon.ico" />
+-->
+    <title>Josh G Johnson.com</title>
+
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- style -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+	<div id="wrapper">
+    <div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<img class="logo" src="//s3-us-west-2.amazonaws.com/joshgjohnson-aws/assets/images/profile.jpg">
+					<h1>Josh G. Johnson</h1>
+					<h2>struggle. change. thrive.</h2>
+          <p>come back in:</p>
+					<div id="countdown"></div>
+          <p>until then, follow me on:</p>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="social">
+							<li><a href="//youtube.com/joshgjohnson" target="new"><i class="fab fa-2x fa-youtube"></i></a></li>
+							<li><a href="//twitter.com/joshgjohnson" target="new"><i class="fab fa-2x fa-twitter"></i></a></li>
+							<li><a href="//instagram.com/joshgjohnson" target="new"><i class="fab fa-2x fa-instagram"></i></a></li>
+							<li><a href="//reddit.com/u/joshgjohnson" target="new"><i class="fab fa-2x fa-reddit-alien"></i></a></li>
+							<li><a href="//codepen.io/joshgjohnson" target="new"><i class="fab fa-2x fa-codepen"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+				<p>don't steal, attribute.
+				<br/>made with <i class="far fa-heart" style="color:#ff0034;"></i> and <i class="fas fa-coffee" style="color:#6f4e37;"></i> by <a href="//joshgjohnson.com/" style="color:#b2babb;">josh g johnson</a>
+          <br/>hosted on <i class="fab fa-github" style="color:#4078c0;"></i> <a href="//pages.github.com/" style="color:#b2babb;">Github Pages</a>
+        </p>
+				</div>
+			</div>
+		</div>
+    <div style="clear: both;"></div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/jquery.countdown.min.js"></script>
+<script>
+var target_date = new Date('January, 14, 2019').getTime();
+var days, hours, minutes, seconds;
+var countdown = document.getElementById('countdown');
+ setInterval(function () {
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+	countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <br> <span class="minutes">' + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
+ 
+}, 1000);
+</script>
+
+  </body>
+</html>

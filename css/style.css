@@ -1,0 +1,153 @@
+/* ==== Google font ==== */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway');
+
+/* ==== FontAwesome ==== */
+
+@import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+body {
+  background-image: url('//s3-us-west-2.amazonaws.com/joshgjohnson-aws/assets/images/bgTop.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-attachment: relative;
+  background-color: #464646;
+	font: 18px 'Raleway', sans-serif;
+	color: #fff;
+}
+    
+h1 {
+	font-size: 42px;
+	letter-spacing: -2px;
+	font-weight: 300;
+  margin: 0 auto;
+  color: #fff;
+}
+h2 {
+  font-size: 1.25em;
+	letter-spacing: .05em;
+  font-weight: 300;
+  margin: 0px auto 20px;
+  color: #fff;
+}
+p {
+	font-size: 1em;
+	font-weight: 300;
+  margin: 20px auto 10px;
+	color: #fff;
+}
+a,
+a:link,
+a:visited {
+	color: #fff;
+	word-wrap: break-word;
+}
+.aligncenter {
+	text-align: center;
+}
+
+
+/* wrapper */
+#wrapper {
+	text-align: center;
+}
+#wrapper img.logo {
+	max-width: 120px;
+  border: 2px solid #fff;
+	border-radius: 50%;
+	padding: 2px;
+}
+.container {
+	background-color: rgba(22,22,22,0.55);
+	border-radius: 15px;
+	margin: 10vh auto;
+	width: 50%;
+	padding: 20px 0;
+	display: block;
+}
+
+
+/* countdown */
+#countdown {
+	width: 100%;
+	font-size: 2em;
+	letter-spacing: -1px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 1.1em;
+	margin: 0 auto;
+	padding: 5px;
+  font-family: sans-serif;
+}
+#countdown .days b, .hours b, .minutes b, .seconds b {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+
+/* footer */
+.social,
+ul li {
+	padding: 5px;
+  margin: 5px auto;
+	list-style: none;
+	display: inline;
+}
+.social i {
+	width: 35px;
+	height: 35px;
+	margin: 0 5px;
+	text-decoration: none;
+	list-style: none;
+}
+.social i:hover {
+	text-decoration: none;
+}
+
+a:hover i.fa-twitter {color: #00b6f1;}
+a:hover i.fa-github {color: #4078c0;}
+a:hover i.fa-reddit-alien {color: #ff5700;}
+a:hover i.fa-instagram {color: #c32aa3;}
+a:hover i.fa-youtube {color: #b31217;}
+a:hover i.fa-codepen {color: #0ebeff;}
+
+.copyright {
+	font: 300 13px 'Raleway', sans-serif;
+	margin: 5px auto;
+	color: #fff;
+	text-align: center;
+	letter-spacing: -0.015em;
+}
+
+
+	@media only screen and (max-width: 600px) { /* For mobile devices */
+		body {
+			background-image: url('//s3-us-west-2.amazonaws.com/joshgjohnson-aws/assets/images/bgTopXS.jpg');
+		}
+    h1 {
+      font-size: 36px;
+      letter-spacing: -2px;
+      font-weight: 300;
+      margin: 0 auto;
+      color: #fff;
+    }
+    h2 {
+      font-size: 1em;
+    }
+    .container {
+      background-color: rgba(22,22,22,0.55);
+      border-radius: 15px;
+      width: 94vw;
+      padding: 10px;
+      margin: 10px auto;
+    }
+}
+    
