@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18944409-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-18944409-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a web designer, minimalist, in Orlando, FL.">
+    <meta name="author" content="Josh G. Johnson">
+    <meta name="theme" content="#333333">
+<!--
+  removed until assets have been updated
+		<link rel="icon" type="image/png" href="//dl.dropboxusercontent.com/u/25306892/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="//dl.dropboxusercontent.com/u/25306892/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="//dl.dropboxusercontent.com/u/25306892/icons/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/x-icon" href="https://dl.dropboxusercontent.com/u/25306892/icons/favicon.ico" />
+-->
+    <title>Josh G Johnson.com</title>
+
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- style -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+	<div id="wrapper">
+    <div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<img class="logo" src="//s3-us-west-2.amazonaws.com/joshgjohnson-aws/assets/images/profile.jpg">
+					<h1>Josh G. Johnson</h1>
+          <h2>Subscriptions</h2>
+          <p>&nbsp;</p>
+          <p>If you signed up to recieve something from me you'll see it here and be able to change settings... For now you won't see anything because there is no subscription service (i.e. the cake is a lie). Basically, once a subscription service is up and running, this is the page you'd need to manage those things.</p>
+          <p>&nbsp;</p>
+				</div>
+				<div class="copyright">
+          <p>made with <a href="https://www.google.com/search?q=cold+brew+instructions" target="_blank"><i class="fas fa-coffee" style="color:#abc;"></i></a> , some <a href="https://norml.org/legal/item/florida-medical-marijuana-law" target="_blank"><i class="fas fa-cannabis" style="color:#183;"></i></a> and lots of <i class="far fa-heart" style="color:#ff0034;"></i> by <a href="//twitter.com/joshgjohnson" style="color:#b2babb;">josh g johnson</a>
+            <br/>hosted on <i class="fab fa-github" style="color:#4078c0;"></i> <a href="//pages.github.com/" target="_blank" style="color:#b2babb;">Github Pages</a>. here's the <a href="//github.com/joshgjohnson/coming-soon" target="_blank" style="color:#b2babb;">Source Code</a>
+          <br/><a href="privacy.html" target="_blank">privacy policy</a> | <a href="communication.html" target="_blank">communication policy</a> | <a href="subscription.html" target="_blank">subscription</a></p>
+        </p>
+				</div>
+			</div>
+		</div>
+    <div style="clear: both;"></div>
+	</div>
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script>
+$( document ).ready(function() {
+
+var target_date = new Date('December, 01, 2019').getTime();
+var days, hours, minutes, seconds;
+var countdown = document.getElementById('countdown');
+ setInterval(function () {
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+	countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <br> <span class="minutes">' + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
+ 
+}, 1000);
+
+  /* 
+  
+  // For subscription form
+
+function init() {
+  // Generate li foreach fieldset
+  for (var i = 0; i < count; i++) {
+    var ul = document.querySelector('ul.items'),
+        li = document.createElement("li");
+
+    ul.appendChild(li);
+  }
+  // Add class active on first li
+  ul.firstChild.classList.add('active');
+}
+
+function next(target) {
+  var input = target.previousElementSibling;
+  
+  // Check if input is empty
+  if (input.value === '') {
+    body.classList.add('error');
+  } else {
+    body.classList.remove('error');
+    
+    var enable = document.querySelector('form fieldset.enable'),
+        nextEnable = enable.nextElementSibling;
+    enable.classList.remove('enable');
+    enable.classList.add('disable');
+    nextEnable.classList.add('enable');
+    
+    // Switch active class on left list
+    var active = document.querySelector('ul.items li.active'),
+        nextActive = active.nextElementSibling;
+    active.classList.remove('active');
+    nextActive.classList.add('active');
+  }
+}
+
+function keyDown(event) {
+  var key = event.keyCode,
+      target = document.querySelector('fieldset.enable .button');
+  if (key == 13 || key == 9) next(target);
+}
+
+var body = document.querySelector('body'),
+    form = document.querySelector('form'),
+    count = form.querySelectorAll('fieldset').length;
+
+window.onload = init;
+document.body.onmouseup = function (event) {
+    var target = event.target || event.toElement;
+    if (target.classList.contains("button")) next(target);
+};
+document.addEventListener("keydown", keyDown, false);
+
+*/
+
+});
+  
+</script>
+    
+
+  </body>
+</html>
