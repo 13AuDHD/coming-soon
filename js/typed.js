@@ -390,11 +390,7 @@
 		smartBackspace: true,
 		startDelay: 300,
 		typeSpeed: 100,
-		backDelay: 700,
 		backSpeed: 75,
 		fadeOut: false,
-		loop: true,
-		loopCount: false,
 		showCursor: false, // show cursor
-		cursorChar: "|", // character for cursor
 	});
