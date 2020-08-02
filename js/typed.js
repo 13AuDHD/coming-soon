@@ -295,7 +295,7 @@
       value: !0
     });
     var s = {
-      strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
+      strings: [""],
       stringsElement: null,
       typeSpeed: 0,
       startDelay: 0,
@@ -384,13 +384,3 @@
   
 });
 
-// TYPED TEXT
-	var typed = new Typed('#typed', {
-		stringsElement: '#typed-strings',
-		smartBackspace: true,
-		startDelay: 300,
-		typeSpeed: 100,
-		backSpeed: 75,
-		fadeOut: false,
-		showCursor: false, // show cursor
-	});
