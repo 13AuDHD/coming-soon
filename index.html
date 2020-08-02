@@ -51,11 +51,11 @@
 					<img class="logo" src="//s3-us-west-2.amazonaws.com/joshgjohnson-aws/assets/images/profile.jpg">
 					<h1>Josh G. Johnson</h1>
             <div class="typed_wrap">
-              <div id="typed-strings">
+              <div id="typed-out">
                 <p>professional driver</p>
                 <p>car dweller</p>
-                <p>minimalist</p>
-                <p></p>
+                <p>intentional living</p>
+                <p>cookie connoisseur</p>
                 <p>i &#10084; photography</p>
                 <p>and making people smile</p>
                 <p></p>
@@ -72,6 +72,8 @@
 							<li><a href="//instagram.com/joshgjohnson" target="_blank"><i class="fab fa-instagram"></i></a></li>
 							<li><a href="//twitter.com/joshgjohnson" target="_blank"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="//youtube.com/joshgjohnson" target="_blank"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="//twitch.tv/joshgjohnson" target="_blank"><i class="fab fa-twitch"></i></a></li>
+              <li><a href="//psnprofiles.com/?psnId=joshgjohnson" target="_blank"><i class="fab fa-playstation"></i></a></li>
 							<li><a href="//reddit.com/u/joshgjohnson" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
 							<li><a href="//facebook.com/joshgjohnson" target="_blank"><i class="fab fa-facebook"></i></a></li>
 							<li><a href="//codepen.io/joshgjohnson" target="_blank"><i class="fab fa-codepen"></i></a></li>
@@ -131,7 +133,7 @@
 <script>
 $( document ).ready(function() {
 
-var target_date = new Date('March, 31, 2020').getTime();
+var target_date = new Date('December, 1, 2020').getTime();
 var days, hours, minutes, seconds;
 var countdown = document.getElementById('countdown');
  setInterval(function () {
@@ -147,6 +149,18 @@ var countdown = document.getElementById('countdown');
  
 }, 1000);
 
+  
+// TYPED TEXT
+	var typed = new Typed('#typed', {
+		stringsElement: '#typed-out',
+		smartBackspace: true,
+		startDelay: 300,
+		typeSpeed: 100,
+		backSpeed: 75,
+		fadeOut: false,
+    loop: true,
+		showCursor: false, // show cursor
+	});
 /* 
 
   // For subscription form
