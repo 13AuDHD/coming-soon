@@ -54,9 +54,9 @@ a:visited {
 	text-align: center;
 }
 #wrapper img.logo {
-	max-width: 120px;
-  border: 2px solid #fff;
-	border-radius: 50%;
+	max-width: 85%;
+ 	/* border: 2px solid #fff; */
+	/* border-radius: 50%; */
 	padding: 2px;
 }
 .container {
