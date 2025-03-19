@@ -153,9 +153,10 @@ a:hover i.fa-donate {color: #216c2a;}
 	@media only screen and (max-width: 600px) { /* For mobile devices */
 		body {
 			background-image: url('//s3.console.aws.amazon.com/s3/object/joshgjohnson-aws?region=us-west-2&prefix=assets/images/DCC74EDC-5C0F-40F4-BC18-C2AB31099618.jpeg');
+			font-size: 12px;
 		}
     h1 {
-      font-size: 36px;
+      font-size: 24px;
       letter-spacing: -2px;
       font-weight: 300;
       margin: 0 auto;
@@ -379,7 +380,7 @@ body.error fieldset {
 }
 #typed {
   font-size: 1rem;
-	letter-spacing: 0.15rem;
+	letter-spacing: 0.10rem;
 }
 #typed::after { /* Add custom cursor so it auto inherits font styles */
 	content: '|';
