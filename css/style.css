@@ -153,7 +153,7 @@ a:hover i.fa-donate {color: #216c2a;}
 	@media only screen and (max-width: 600px) { /* For mobile devices */
 		body {
 			background-image: url('//s3.console.aws.amazon.com/s3/object/joshgjohnson-aws?region=us-west-2&prefix=assets/images/DCC74EDC-5C0F-40F4-BC18-C2AB31099618.jpeg');
-			font-size: 12px;
+			font-size: 14px;
 		}
     h1 {
       font-size: 24px;
