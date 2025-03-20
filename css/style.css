@@ -11,7 +11,7 @@ html, body {
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 body {
   background-image: url('https://www.dropbox.com/scl/fi/09z8jlilf4jlj5hmejyhv/mountain-bg.png?rlkey=a271c4zumcb0za4i09ohx887e&st=bpb8cgr2&raw=1');
@@ -25,7 +25,7 @@ body {
 }
     
 h1 {
-	font-size: 1.75rem;
+	font-size: 1.25rem;
 	letter-spacing: 0px;
 	font-weight: 300;
   margin: 0 auto;
@@ -57,13 +57,13 @@ a:visited {
 	max-width: 90%;
  	/* border: 2px solid #fff; */
 	/* border-radius: 50%; */
-	padding: 20px auto 10px;
+	padding: 10px auto 10px;
 }
 .container {
 	background-color: rgba(22,22,22,0.75);
 	border-radius: 15px;
 	margin: 10vh auto;
-	width: 50%;
+	width: 60%;
 	padding: 10px;
 	display: block;
 }
@@ -379,7 +379,7 @@ body.error fieldset {
   visibility: hidden;
 }
 #typed {
-  font-size: 0.75rem;
+  font-size: 1.25rem;
 	letter-spacing: 0.10rem;
 }
 #typed::after { /* Add custom cursor so it auto inherits font styles */
